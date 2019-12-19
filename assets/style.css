@@ -419,6 +419,7 @@ ul.header-nav-list li a {
 #projects {
     background-color: #F6F6F8;
     padding-top: 100px;
+    padding-bottom: 130px;
 }
 
 #projects .section-title {
@@ -444,10 +445,6 @@ ul.header-nav-list li a {
 .projects-img .img-item img {
     width: 80%;
     cursor: pointer;
-}
-
-#projects .anchor {
-    margin-bottom: 130px;
 }
 
 /*section Video-about*/
