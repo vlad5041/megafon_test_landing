@@ -159,9 +159,9 @@ ul.header-nav-list li {
     padding: 40px 20px;
 }
 
-ul.header-nav-list li:last-child {
+/*ul.header-nav-list li:last-child {
     padding: 40px 0 20px 20px;
-}
+}*/
 
 ul.header-nav-list li:hover, ul.header-nav-list li:active {
     border-bottom: 1px solid #fff;
@@ -171,6 +171,10 @@ ul.header-nav-list li a {
     color: #fff;
     text-decoration: none;
     padding: 40px 0;
+}
+
+.burger-wrapper {
+    display: none;
 }
 
 .banner-title-wrap {
@@ -278,7 +282,7 @@ ul.header-nav-list li a {
 .interface-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-bottom: 90px;
     border-bottom: 1px solid #E0E0E0;
     margin-bottom: 85px;
@@ -640,4 +644,79 @@ footer .first-list ul li.address:before {
     height: 15px;
     top: 2px;
     left: -15px;
+}
+
+@media screen and (max-width: 769px) {
+    #services .section-title {
+        width: 100%;
+    }
+    nav.header-nav {
+        margin-left: 0;
+    }
+    #services .services {
+        flex-direction: column;
+    }
+    #services .services .service-item-wrap {
+        width: 65%;
+        margin: 0 auto 30px auto;
+        align-items: center;
+        max-width: 100%;
+    }
+    .service-item-description {
+        margin-top: 0;
+    }
+    #example-work .content .title {
+        justify-content: space-evenly;
+    }
+    #video-about .section-video-wrap {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 415px){
+    /*header*/
+    .banner-title h1 {
+        font-size: 44px;
+    }
+
+    /*section Services*/
+    #services {
+        padding-bottom: 45px;
+    }
+    #services .section-title h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    #services .services .service-item-wrap {
+        width: 100%;
+    }
+
+    /*section Interface*/
+    #interface {
+        padding-top: 45px;
+    }
+    .interface-content {
+        flex-direction: column;
+    }
+    .interface-description, .interface-img {
+        width: 100%;
+    }
+    .interface-description {
+        margin-bottom: 30px;
+    }
+    .interface-description p {
+        text-align: left;
+    }
+    .header-nav-list {
+        display: none;
+    }
+    .burger-wrapper {
+        display: block;
+    }
+    .interface-web-programming {
+        flex-direction: column;
+    }
+    .interface-item .title {
+        justify-content: center;
+    }
 }
