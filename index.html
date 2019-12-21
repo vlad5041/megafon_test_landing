@@ -20,6 +20,18 @@
                     <div class="burger-wrapper">
                         <input id="burger-button" src="assets/icons/burger.png" onclick="toggleDisplay()" name="burger-button" alt="Меню" type="image">
                     </div>
+                    <div id="popup" style="display: none;">
+                        <div class="close-button-srap">
+                            <input type="image" src="assets/icons/close.svg" onclick="toggleDisplay()" class="close-button" name="close-button"  alt="Закрыть"/>
+                        </div>
+                        <ul class="menu-list-mobile">
+                            <li><a href="#top">Главная</a></li>
+                            <li><a href="#projects">Наши проекты</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#news">Новости</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div class="banner-title-wrap">
@@ -294,5 +306,6 @@
             <p>(с) 2019. Все права защищены.</p>
         </div>
     </footer>
+    <script src="assets/script.js"></script>
 </body>
 </html>
